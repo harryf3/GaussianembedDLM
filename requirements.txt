@@ -1,0 +1,2 @@
+# PyTorch 2.0+ is required for scaled_dot_product_attention.
+torch>=2.0
