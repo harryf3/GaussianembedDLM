@@ -1,0 +1,1 @@
+Determinstic degradation and reconstruction - perhaps a simple truncation of embeddings
