@@ -1,0 +1,692 @@
+[
+  {
+    "file": "dlm_5m.outputs.txt",
+    "printed_parameters": [
+      "548,996"
+    ],
+    "training_rows": 3,
+    "first_training_row": [
+      {
+        "line": 19,
+        "step": 50,
+        "budget": 10000,
+        "total": 1.11,
+        "weighted_mse": 1.0497,
+        "weighted_rounding": 0.0604,
+        "prior": 2.28e-07,
+        "grad_norm": 0.4326
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 21,
+        "step": 150,
+        "budget": 10000,
+        "total": 0.873,
+        "weighted_mse": 0.8324,
+        "weighted_rounding": 0.0406,
+        "prior": 2.21e-07,
+        "grad_norm": 0.2626
+      }
+    ],
+    "sample_steps": [],
+    "has_interrupt": true,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "gauss_embed_dlm.outputs.txt",
+    "printed_parameters": [
+      "56,136"
+    ],
+    "training_rows": 164,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 1.1204,
+        "weighted_mse": 0.9615,
+        "weighted_rounding": 0.0045,
+        "weighted_prior": 0.154444,
+        "grad_norm": 0.724
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 229,
+        "step": 8200,
+        "budget": 10000,
+        "total": 0.0475,
+        "weighted_mse": 0.0462,
+        "weighted_rounding": 0.0012,
+        "weighted_prior": 3.1e-05,
+        "grad_norm": 0.0279
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000",
+      "4000",
+      "5000",
+      "6000",
+      "7000",
+      "8000"
+    ],
+    "has_interrupt": true,
+    "per_t_diagnostics": [
+      "t=   1 | mse=0.0207 | token_accuracy=44.6%",
+      "t=  10 | mse=0.0206 | token_accuracy=44.2%",
+      "t= 100 | mse=0.0311 | token_accuracy=21.6%",
+      "t= 250 | mse=0.0439 | token_accuracy=14.4%",
+      "t= 500 | mse=0.0461 | token_accuracy=16.3%",
+      "t= 750 | mse=0.0463 | token_accuracy=16.1%",
+      "t=1000 | mse=0.0462 | token_accuracy=16.3%"
+    ]
+  },
+  {
+    "file": "gauss_embed_dlm_wass_10m.outputs.txt",
+    "printed_parameters": [],
+    "training_rows": 0,
+    "first_training_row": [],
+    "last_training_row": [],
+    "sample_steps": [],
+    "has_interrupt": false,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "gauss_embed_dlm_wass_5m.outputs.txt",
+    "printed_parameters": [
+      "4,991,616"
+    ],
+    "training_rows": 17,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 3.8333,
+        "weighted_mse": 1.0121,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 2.821265,
+        "mean_avg": 0.0469,
+        "mean_rms": 0.2394,
+        "variance_avg": 0.9785,
+        "cov_rms_error": 2.5435,
+        "grad_norm": 0.6404
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 31,
+        "step": 850,
+        "budget": 10000,
+        "total": 2.4388,
+        "weighted_mse": 0.4849,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 1.953822,
+        "mean_avg": 0.031,
+        "mean_rms": 0.157,
+        "variance_avg": 0.9563,
+        "cov_rms_error": 2.3823,
+        "grad_norm": 0.4577
+      }
+    ],
+    "sample_steps": [],
+    "has_interrupt": true,
+    "per_t_diagnostics": [
+      "t=   1 | mse=0.0717 | token_accuracy=100.0%",
+      "t=  10 | mse=0.0706 | token_accuracy=100.0%",
+      "t= 100 | mse=0.1425 | token_accuracy=100.0%",
+      "t= 250 | mse=0.3472 | token_accuracy=99.7%",
+      "t= 500 | mse=0.7645 | token_accuracy=55.6%",
+      "t= 750 | mse=0.9842 | token_accuracy=14.6%",
+      "t=1000 | mse=0.9887 | token_accuracy=13.3%"
+    ]
+  },
+  {
+    "file": "gauss_embedd_dlm_wass.outputs.txt",
+    "printed_parameters": [
+      "112,400"
+    ],
+    "training_rows": 200,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 12.3771,
+        "weighted_mse": 1.2319,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 11.145215,
+        "grad_norm": 4.0862
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 315,
+        "step": 10000,
+        "budget": 10000,
+        "total": 1.5574,
+        "weighted_mse": 0.7508,
+        "weighted_rounding": 0.0209,
+        "weighted_prior": 0.785684,
+        "grad_norm": 0.5862
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000",
+      "4000",
+      "5000",
+      "6000",
+      "7000",
+      "8000",
+      "9000",
+      "10000"
+    ],
+    "has_interrupt": false,
+    "per_t_diagnostics": [
+      "t=   1 | mse=0.1671 | token_accuracy=94.2%",
+      "t=  10 | mse=0.1659 | token_accuracy=94.3%",
+      "t= 100 | mse=0.2194 | token_accuracy=90.4%",
+      "t= 250 | mse=0.5041 | token_accuracy=58.1%",
+      "t= 500 | mse=0.9154 | token_accuracy=16.5%",
+      "t= 750 | mse=0.9781 | token_accuracy=16.0%",
+      "t=1000 | mse=0.9819 | token_accuracy=16.2%"
+    ]
+  },
+  {
+    "file": "old__fixed_gauss_embed_dlm.outputs.txt",
+    "printed_parameters": [
+      "1,236,096"
+    ],
+    "training_rows": 200,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 0.0699,
+        "weighted_mse": 0.068,
+        "weighted_rounding": 0.0018,
+        "weighted_prior": 7.6e-05,
+        "grad_norm": 0.0162
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 294,
+        "step": 10000,
+        "budget": 10000,
+        "total": 0.0437,
+        "weighted_mse": 0.0414,
+        "weighted_rounding": 0.0023,
+        "weighted_prior": 1.7e-05,
+        "grad_norm": 0.0124
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000",
+      "4000",
+      "5000",
+      "6000",
+      "7000",
+      "8000",
+      "9000",
+      "10000"
+    ],
+    "has_interrupt": false,
+    "per_t_diagnostics": [
+      "t=   1 | mse=0.0009 | token_accuracy=100.0%",
+      "t=  10 | mse=0.0009 | token_accuracy=100.0%",
+      "t= 100 | mse=0.0009 | token_accuracy=100.0%",
+      "t= 250 | mse=0.0197 | token_accuracy=62.4%",
+      "t= 500 | mse=0.0480 | token_accuracy=19.3%",
+      "t= 750 | mse=0.0605 | token_accuracy=16.3%",
+      "t=1000 | mse=0.0605 | token_accuracy=16.3%"
+    ]
+  },
+  {
+    "file": "old__gauss_embed_dlm_before_likelihood.outputs.txt",
+    "printed_parameters": [
+      "1,236,096"
+    ],
+    "training_rows": 200,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 0.0699,
+        "weighted_mse": 0.068,
+        "weighted_rounding": 0.0018,
+        "weighted_prior": 7.6e-05,
+        "grad_norm": 0.0162
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 294,
+        "step": 10000,
+        "budget": 10000,
+        "total": 0.0437,
+        "weighted_mse": 0.0414,
+        "weighted_rounding": 0.0023,
+        "weighted_prior": 1.7e-05,
+        "grad_norm": 0.0124
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000",
+      "4000",
+      "5000",
+      "6000",
+      "7000",
+      "8000",
+      "9000",
+      "10000"
+    ],
+    "has_interrupt": false,
+    "per_t_diagnostics": [
+      "t=   1 | mse=0.0009 | token_accuracy=100.0%",
+      "t=  10 | mse=0.0009 | token_accuracy=100.0%",
+      "t= 100 | mse=0.0009 | token_accuracy=100.0%",
+      "t= 250 | mse=0.0197 | token_accuracy=62.4%",
+      "t= 500 | mse=0.0480 | token_accuracy=19.3%",
+      "t= 750 | mse=0.0605 | token_accuracy=16.3%",
+      "t=1000 | mse=0.0605 | token_accuracy=16.3%"
+    ]
+  },
+  {
+    "file": "old__gauss_embed_dlm_gaussian_logprobs.outputs.txt",
+    "printed_parameters": [
+      "234,528"
+    ],
+    "training_rows": 61,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 3.3066,
+        "weighted_mse": 1.0129,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 2.293766,
+        "grad_norm": 3.7358
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 105,
+        "step": 3050,
+        "budget": 10000,
+        "total": 0.4099,
+        "weighted_mse": 0.4072,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 0.002699,
+        "grad_norm": 0.0478
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000"
+    ],
+    "has_interrupt": true,
+    "per_t_diagnostics": [
+      "t=   1 | mse=0.0358 | token_accuracy=99.4%",
+      "t=  10 | mse=0.0356 | token_accuracy=99.4%",
+      "t= 100 | mse=0.0369 | token_accuracy=99.4%",
+      "t= 250 | mse=0.0964 | token_accuracy=91.3%",
+      "t= 500 | mse=0.5367 | token_accuracy=17.3%",
+      "t= 750 | mse=0.6043 | token_accuracy=0.2%",
+      "t=1000 | mse=0.6062 | token_accuracy=0.2%"
+    ]
+  },
+  {
+    "file": "old__gauss_embed_dlm_gaussian_logprobs_weighted.outputs.txt",
+    "printed_parameters": [],
+    "training_rows": 0,
+    "first_training_row": [],
+    "last_training_row": [],
+    "sample_steps": [],
+    "has_interrupt": false,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__gauss_embed_dlm_gaussian_logprobs_weighted_covariance.outputs.txt",
+    "printed_parameters": [
+      "234,528"
+    ],
+    "training_rows": 200,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 2.4541,
+        "weighted_mse": 1.0157,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 1.438403,
+        "grad_norm": 0.6561
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 298,
+        "step": 10000,
+        "budget": 10000,
+        "total": 0.5318,
+        "weighted_mse": 0.4571,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 0.074759,
+        "grad_norm": 0.0461
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000",
+      "4000",
+      "5000",
+      "6000",
+      "7000",
+      "8000",
+      "9000",
+      "10000"
+    ],
+    "has_interrupt": false,
+    "per_t_diagnostics": [
+      "t=   1 | mse=0.0238 | token_accuracy=99.5%",
+      "t=  10 | mse=0.0238 | token_accuracy=99.5%",
+      "t= 100 | mse=0.0239 | token_accuracy=99.5%",
+      "t= 250 | mse=0.0599 | token_accuracy=83.7%",
+      "t= 500 | mse=0.6269 | token_accuracy=1.5%",
+      "t= 750 | mse=0.7193 | token_accuracy=0.0%",
+      "t=1000 | mse=0.7204 | token_accuracy=0.0%"
+    ]
+  },
+  {
+    "file": "old__gauss_embed_dlm_memorize.outputs.txt",
+    "printed_parameters": [
+      "1,236,096"
+    ],
+    "training_rows": 200,
+    "first_training_row": [
+      {
+        "line": 23,
+        "step": 50,
+        "budget": 10000,
+        "total": 1.9369,
+        "weighted_mse": 0.9507,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 0.986219,
+        "grad_norm": 3.5472
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 378,
+        "step": 10000,
+        "budget": 10000,
+        "total": 0.066,
+        "weighted_mse": 0.0658,
+        "weighted_rounding": 0.0002,
+        "weighted_prior": 4.7e-05,
+        "grad_norm": 0.1628
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000",
+      "4000",
+      "5000",
+      "6000",
+      "7000",
+      "8000",
+      "9000",
+      "10000"
+    ],
+    "has_interrupt": false,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__gauss_embed_dlm_momentmatch.outputs.txt",
+    "printed_parameters": [
+      "324,352"
+    ],
+    "training_rows": 20,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 1000,
+        "total": 5.7466,
+        "mse": 1.1262,
+        "weighted_ce": 4.4142,
+        "weighted_prior": 0.20613,
+        "aggregate_mean": 0.001,
+        "aggregate_variance": 1.0062,
+        "grad_norm": 0.3213
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 34,
+        "step": 1000,
+        "budget": 1000,
+        "total": 2.2404,
+        "mse": 0.4141,
+        "weighted_ce": 1.6165,
+        "weighted_prior": 0.209894,
+        "aggregate_mean": 0.0023,
+        "aggregate_variance": 0.7663,
+        "grad_norm": 0.2886
+      }
+    ],
+    "sample_steps": [
+      "1000"
+    ],
+    "has_interrupt": false,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__gauss_embed_dlm_slicedwass.outputs.txt",
+    "printed_parameters": [
+      "324,352"
+    ],
+    "training_rows": 20,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 1000,
+        "total": 5.7466,
+        "mse": 1.1262,
+        "weighted_ce": 4.4142,
+        "weighted_prior": 0.20613,
+        "aggregate_mean": 0.001,
+        "aggregate_variance": 1.0062,
+        "grad_norm": 0.3213
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 34,
+        "step": 1000,
+        "budget": 1000,
+        "total": 2.2404,
+        "mse": 0.4141,
+        "weighted_ce": 1.6165,
+        "weighted_prior": 0.209894,
+        "aggregate_mean": 0.0023,
+        "aggregate_variance": 0.7663,
+        "grad_norm": 0.2886
+      }
+    ],
+    "sample_steps": [
+      "1000"
+    ],
+    "has_interrupt": false,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__gauss_embed_dlm_twowaykl.outputs.txt",
+    "printed_parameters": [
+      "1,364,224"
+    ],
+    "training_rows": 100,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 4.1114,
+        "mse": 0.7828,
+        "weighted_ce": 2.8397,
+        "weighted_prior": 0.488962,
+        "aggregate_mean": 0.0013,
+        "aggregate_variance": 0.9935,
+        "grad_norm": 0.4447
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 165,
+        "step": 5000,
+        "budget": 10000,
+        "total": 2.8392,
+        "mse": 0.7434,
+        "weighted_ce": 1.4855,
+        "weighted_prior": 0.610199,
+        "aggregate_mean": -0.0003,
+        "aggregate_variance": 0.9952,
+        "grad_norm": 0.5131
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000",
+      "4000",
+      "5000"
+    ],
+    "has_interrupt": true,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__gauss_embed_dlm_twowaykl_sinusoidal.outputs.txt",
+    "printed_parameters": [],
+    "training_rows": 0,
+    "first_training_row": [],
+    "last_training_row": [],
+    "sample_steps": [],
+    "has_interrupt": false,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__gauss_embedd_dlm_wass_eps.outputs.txt",
+    "printed_parameters": [
+      "112,400"
+    ],
+    "training_rows": 200,
+    "first_training_row": [
+      {
+        "line": 15,
+        "step": 50,
+        "budget": 10000,
+        "total": 12.2108,
+        "weighted_mse": 1.0638,
+        "weighted_rounding": 0.0,
+        "weighted_prior": 11.147002,
+        "grad_norm": 4.0292
+      }
+    ],
+    "last_training_row": [
+      {
+        "line": 268,
+        "step": 10000,
+        "budget": 10000,
+        "total": 1.1994,
+        "weighted_mse": 0.4061,
+        "weighted_rounding": 0.0217,
+        "weighted_prior": 0.771599,
+        "grad_norm": 0.5866
+      }
+    ],
+    "sample_steps": [
+      "1000",
+      "2000",
+      "3000",
+      "4000",
+      "5000",
+      "6000",
+      "7000",
+      "8000",
+      "9000",
+      "10000"
+    ],
+    "has_interrupt": false,
+    "per_t_diagnostics": [
+      "t=   1 | mse=0.0001 | token_accuracy=99.5%",
+      "t=  10 | mse=0.0019 | token_accuracy=99.4%",
+      "t= 100 | mse=0.1020 | token_accuracy=96.1%",
+      "t= 250 | mse=0.5376 | token_accuracy=53.6%",
+      "t= 500 | mse=2.7932 | token_accuracy=12.3%",
+      "t= 750 | mse=53.2611 | token_accuracy=13.3%",
+      "t=1000 | mse=4386.9761 | token_accuracy=13.4%"
+    ]
+  },
+  {
+    "file": "old__gauss_embedd_dlm_wass_v.outputs.txt",
+    "printed_parameters": [],
+    "training_rows": 0,
+    "first_training_row": [],
+    "last_training_row": [],
+    "sample_steps": [],
+    "has_interrupt": false,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__vldiffnlp.outputs.txt",
+    "printed_parameters": [],
+    "training_rows": 0,
+    "first_training_row": [],
+    "last_training_row": [],
+    "sample_steps": [],
+    "has_interrupt": false,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__vldiffnlp_2.outputs.txt",
+    "printed_parameters": [],
+    "training_rows": 0,
+    "first_training_row": [],
+    "last_training_row": [],
+    "sample_steps": [],
+    "has_interrupt": true,
+    "per_t_diagnostics": []
+  },
+  {
+    "file": "old__vldiffnlp_3.outputs.txt",
+    "printed_parameters": [],
+    "training_rows": 0,
+    "first_training_row": [],
+    "last_training_row": [],
+    "sample_steps": [],
+    "has_interrupt": false,
+    "per_t_diagnostics": [
+      "t=50, token recovery=100.0%",
+      "t=500, token recovery=98.4%",
+      "t=900, token recovery=20.3%",
+      "t=999, token recovery=0.0%"
+    ]
+  }
+]

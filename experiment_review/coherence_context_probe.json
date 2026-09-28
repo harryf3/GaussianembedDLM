@@ -1,0 +1,27 @@
+{
+  "checkpoint_step": 3000,
+  "positions": [
+    8,
+    24,
+    40,
+    56
+  ],
+  "heldout_works": [
+    "macbeth_TXT_FolgerShakespeare.txt",
+    "the-tempest_TXT_FolgerShakespeare.txt"
+  ],
+  "timesteps": {
+    "250": {
+      "original_ce": 0.2272235006093979,
+      "shuffled_neighbor_ce": 0.2328455001115799,
+      "original_accuracy": 0.9296875,
+      "shuffled_neighbor_accuracy": 0.93359375
+    },
+    "500": {
+      "original_ce": 2.8362395763397217,
+      "shuffled_neighbor_ce": 2.860466241836548,
+      "original_accuracy": 0.22265625,
+      "shuffled_neighbor_accuracy": 0.2109375
+    }
+  }
+}

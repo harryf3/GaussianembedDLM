@@ -18,7 +18,7 @@ import torch
 from torch import Tensor
 from torch.utils.data import DataLoader, Dataset
 
-from model import ModelConfig, PointEmbeddingDiffusionLM
+from old.model import ModelConfig, PointEmbeddingDiffusionLM
 
 
 class CharacterBlocks(Dataset[Tensor]):

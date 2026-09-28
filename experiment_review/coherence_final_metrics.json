@@ -1,0 +1,46 @@
+{
+  "holdout": [
+    "macbeth_TXT_FolgerShakespeare.txt",
+    "the-tempest_TXT_FolgerShakespeare.txt"
+  ],
+  "validation_windows": 512,
+  "tokens_per_window": 64,
+  "sample_temperature": 0.65,
+  "sample_top_k": 12,
+  "samples_per_model": 3,
+  "models": {
+    "point": {
+      "best_step": 10000,
+      "validation_ce": 1.6596644073724747,
+      "samples": [
+        "\n\nANTIPHOLUS OF SYRACUSE\nThat shall be the heavy of a baside.\n\nANTONY\nYou daughter you will speed to say, where you,\nIn this wears to a must soldiers father. But thought the bast,\nAnd he's no th' earth the fiends eye his fool\nAnd leave me stirits?\n\nACT 3\n==",
+        "\n\nBRUTUS  Believe you must for the bear to the proport.\n\nMARGARET  I cannot me in the people of the temphrey of the boy!\n\nPAROLLO\nBeauty the storn made the sonst of me him.\n\nSALIND\nWhy, sir, my lord! And I was a deside.\n\nDUKE\nI will that them name were to t",
+        "\n\n\nCROSALINE  No glory must but mine to my lord,\nThe heart to shall never the gone of for the gives of my speak,\nThat we a sliffering for the sleep of lady.\n\nLADRIO  You love heart, so shall me with this heaven all\nsimple to a master of the sentle, with hat"
+      ],
+      "known_word_fraction": 0.8761061946902655,
+      "distinct_fourgram_fraction": 0.800524934383202,
+      "exact_training_64gram_windows": 0,
+      "generated_64gram_windows": 582
+    },
+    "gaussian": {
+      "best_step": 10000,
+      "validation_ce": 1.7127473950386047,
+      "samples": [
+        "\n\nANTIANO  I am the sent to be worth me, with shall\nwill is a bound than meanation an the courtent of as the fair\nTo with the dead of a morrows, should she is to the gods,\nI have you she's no the reath that dead her shall body\nAs true of their many and this",
+        "\n\nBRUTUS  But mast in the world contented that is him\nto his fail father's the field of th' spake of the grown\nTo so my found.\n\nCABELLET\nWhy, thou madam, whom the hand her that worse should for fall\nThe father. But where is our cust that them was and speak.",
+        "\n\nDUKE, [to Sentonio]\nO, my father, who comes, the phart of thy heart.\n\nBENEDICK  Thou shalt still but my speak, my love?\n\nBENENCE  And he hath is blood.\n\nKING HENRUS\nWe let have when as the master commer to should\nWith thy sade a prove and heaths, will hat"
+      ],
+      "known_word_fraction": 0.8879310344827587,
+      "distinct_fourgram_fraction": 0.7795275590551181,
+      "exact_training_64gram_windows": 0,
+      "generated_64gram_windows": 582,
+      "geometry": {
+        "weighted_mmd_squared": 0.005860805511474609,
+        "within_variance": 0.3077476918697357,
+        "covariance_rms_error": 0.14713828265666962,
+        "covariance_eigen_min": 0.6737549304962158,
+        "covariance_eigen_max": 1.2026830911636353
+      }
+    }
+  }
+}

@@ -145,11 +145,11 @@ class GaussianCodebookDiffusionLM(nn.Module):
         )
         self.final_norm = nn.LayerNorm(config.dim)
         self.x0_head = nn.Linear(config.dim, config.dim)
-        self.rounding_head = nn.Linear(config.dim, config.vocab_size)
-        # Match Diffusion-LM's e2e code path: the decoder and input codebook
-        # share the same token centers.
-        self.rounding_head.weight = self.codebook.mu
         self.register_buffer("alpha_bar", cosine_alpha_bar(config.diffusion_steps))
+
+    def rounding_logits(self, vectors: Tensor) -> Tensor:
+        """Decode with the codebook centres themselves, with no free bias."""
+        return vectors @ self.codebook.mu.T
 
     def q_sample(self, x0: Tensor, timesteps: Tensor, noise: Tensor | None = None) -> Tensor:
         """Apply the forward diffusion transition to a batch of clean states."""
@@ -173,7 +173,7 @@ class GaussianCodebookDiffusionLM(nn.Module):
             hidden = block(hidden)
         hidden = self.final_norm(hidden)
         x0_hat = self.x0_head(hidden)
-        return x0_hat, self.rounding_head(x0_hat)
+        return x0_hat, self.rounding_logits(x0_hat)
 
     def training_loss(
         self,
@@ -205,7 +205,7 @@ class GaussianCodebookDiffusionLM(nn.Module):
         # The e2e Diffusion-LM objective trains p(w | x0), then the same
         # decoder rounds the denoiser's predicted x0 during sampling.
         rounding = F.cross_entropy(
-            self.rounding_head(x0).flatten(0, 1), token_ids.flatten()
+            self.rounding_logits(x0).flatten(0, 1), token_ids.flatten()
         )
         return gaussian_codebook_objective(
             diffusion,
@@ -234,7 +234,6 @@ class PointEmbeddingDiffusionLM(GaussianCodebookDiffusionLM):
         super().__init__(config)
         del self.codebook
         self.token_embedding = nn.Embedding(config.vocab_size, config.dim)
-        self.rounding_head.weight = self.token_embedding.weight
         # Diffusion-LM derives its clean-state noise from the first forward
         # transition. Allow an explicit value only for controlled ablations.
         self.x0_noise_std = (
@@ -242,6 +241,10 @@ class PointEmbeddingDiffusionLM(GaussianCodebookDiffusionLM):
             if x0_noise_std is None
             else x0_noise_std
         )
+
+    def rounding_logits(self, vectors: Tensor) -> Tensor:
+        """Decode with the point-embedding table itself, with no free bias."""
+        return vectors @ self.token_embedding.weight.T
 
     def training_loss(self, token_ids: Tensor) -> LossTerms:  # type: ignore[override]
         """Compute the original point-embedding diffusion and rounding losses."""
@@ -263,7 +266,7 @@ class PointEmbeddingDiffusionLM(GaussianCodebookDiffusionLM):
         x0_hat, _ = self(x_t, timesteps)
         diffusion = F.mse_loss(x0_hat, x0)
         rounding = F.cross_entropy(
-            self.rounding_head(x0).flatten(0, 1), token_ids.flatten()
+            self.rounding_logits(x0).flatten(0, 1), token_ids.flatten()
         )
         # Matches the authors' e2e terminal-prior mean term. It prevents the
         # learned codebook from retaining a large mean at the final noise step.
